@@ -10,28 +10,18 @@
 body { background:#f8f9fa; }
 .consult-card { min-height:260px; }
 .consult-card h2 { min-height:90px; }
-.vb-header {
-    background: #1f242b;
-}
-
-.vb-logo {
-    font-size: 2rem;
-    font-weight: 700;
-    color: white !important;
-    text-decoration: none;
-}
 </style>
 </head>
 <body>
 
- <!-- Header -->
 <nav class="navbar navbar-dark bg-dark">
 <div class="container">
-<a class="navbar-brand" href="#"><i class="fas fa-laptop-code me-2"></i><strong>VB Works</strong></a>
+<a class="navbar-brand" href="index.html">
+<i class="fas fa-laptop-code me-2"></i><strong>VB Works</strong>
+</a>
 </div>
 </nav>
-	
-	<!-- Consultation Page Content -->
+
 <div class="container py-5">
 
 <h1 class="text-center mb-5">Book a Consultation</h1>
@@ -42,52 +32,46 @@ body { background:#f8f9fa; }
 <div class="card consult-card shadow-sm h-100">
 <div class="card-body d-flex flex-column">
 <h2>Technical Training</h2>
+
 <div class="mb-4">
+<p>
+Comprehensive WPF training designed for freshers and experienced developers looking to build enterprise desktop applications.
+</p>
 
-    <p>
-        Comprehensive WPF training designed for freshers and
-        experienced developers looking to build enterprise desktop applications.
-    </p>
-
-    <div class="row">
-        <div class="col-6">
-            <ul class="small">
-                <li>WPF & XAML</li>
-                <li>MVVM Pattern</li>
-                <li>Prism Framework</li>
-                <li>Dependency Injection</li>
-                <li>REST APIs</li>
-            </ul>
-        </div>
-
-        <div class="col-6">
-            <ul class="small">
-                <li>SQL Server</li>
-                <li>Entity Framework</li>
-                <li>Logging</li>
-                <li>Deployment</li>
-                <li>Interview Questions</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="alert alert-success mt-2 mb-0 py-2">
-        <strong>Includes:</strong>
-        Real-time project implementation,
-        source code access,
-        interview preparation,
-        resume review,
-        and referral support.
-    </div>
-
+<div class="row">
+<div class="col-6">
+<ul class="small">
+<li>WPF & XAML</li>
+<li>MVVM Pattern</li>
+<li>Prism Framework</li>
+<li>Dependency Injection</li>
+<li>REST APIs</li>
+</ul>
 </div>
+
+<div class="col-6">
+<ul class="small">
+<li>SQL Server</li>
+<li>Entity Framework</li>
+<li>Logging</li>
+<li>Deployment</li>
+<li>Interview Questions</li>
+</ul>
+</div>
+</div>
+
+<div class="alert alert-success mt-2 mb-0 py-2">
+<strong>Includes:</strong>
+Real-time project implementation, source code access, interview preparation, resume review, and referral support.
+</div>
+</div>
+
 <div class="mt-auto">
-<button class="btn btn-success w-100"
-        data-bs-toggle="modal"
-        data-bs-target="#trainingModal">
+<button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#trainingModal">
 Request Training
 </button>
 </div>
+
 </div>
 </div>
 </div>
@@ -95,56 +79,50 @@ Request Training
 <div class="col-md-6">
 <div class="card consult-card shadow-sm h-100">
 <div class="card-body d-flex flex-column">
+
 <h2>New Application Development</h2>
+
 <div class="mb-4">
+<p>
+Need a custom business application developed quickly and professionally?
+We specialize in enterprise-grade desktop and web application development using modern Microsoft technologies.
+</p>
 
-    <p>
-        Need a custom business application developed quickly and professionally?
-        We specialize in enterprise-grade desktop and web application development
-        using modern Microsoft technologies.
-    </p>
-
-    <div class="row">
-        <div class="col-6">
-            <ul class="small">
-                <li>.NET Core / .NET 8</li>
-                <li>WPF Desktop Apps</li>
-                <li>ASP.NET Core MVC</li>
-                <li>Web APIs</li>
-                <li>Angular Applications</li>
-            </ul>
-        </div>
-
-        <div class="col-6">
-            <ul class="small">
-                <li>SQL Server</li>
-                <li>PostgreSQL</li>
-                <li>SQLite</li>
-                <li>Cloud Deployment</li>
-                <li>Performance Optimization</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="alert alert-primary mt-2 mb-0 py-2">
-        <strong>Services Include:</strong><br>
-        Architecture Design,
-        Rapid Development,
-        Database Design,
-        API Integration,
-        Performance Tuning,
-        Deployment Automation,
-        and Long-Term Support.
-    </div>
-
+<div class="row">
+<div class="col-6">
+<ul class="small">
+<li>.NET Core / .NET 8</li>
+<li>WPF Desktop Apps</li>
+<li>ASP.NET Core MVC</li>
+<li>Web APIs</li>
+<li>Angular Applications</li>
+</ul>
 </div>
+
+<div class="col-6">
+<ul class="small">
+<li>SQL Server</li>
+<li>PostgreSQL</li>
+<li>SQLite</li>
+<li>Cloud Deployment</li>
+<li>Performance Optimization</li>
+</ul>
+</div>
+</div>
+
+<div class="alert alert-primary mt-2 mb-0 py-2">
+<strong>Services Include:</strong><br>
+Architecture Design, Rapid Development, Database Design, API Integration,
+Performance Tuning, Deployment Automation, and Long-Term Support.
+</div>
+</div>
+
 <div class="mt-auto">
-<button class="btn btn-primary w-100"
-        data-bs-toggle="modal"
-        data-bs-target="#developmentModal">
+<button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#developmentModal">
 Request Development
 </button>
 </div>
+
 </div>
 </div>
 </div>
@@ -159,46 +137,72 @@ Request Development
 
 </div>
 
+<!-- Training Modal -->
 <div class="modal fade" id="trainingModal" tabindex="-1">
 <div class="modal-dialog">
 <div class="modal-content">
-<form method="post" action="/api/consultation/training">
+
+<form action="https://formsubmit.co/bablu.bb2@gmail.com" method="POST">
+
+<input type="hidden" name="_subject" value="VB Works - Training Enquiry">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://additive-abc.github.io/vbworks-website/thankyou.html">
+<input type="hidden" name="EnquiryType" value="Training">
+
 <div class="modal-header">
 <h5 class="modal-title">Technical Training Enquiry</h5>
 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 </div>
+
 <div class="modal-body">
 <input type="text" class="form-control mb-3" name="Name" placeholder="Name" required>
-<input type="email" class="form-control mb-3" id="email" name="Email" placeholder="Email Address">
+<input type="email" class="form-control mb-3" name="Email" placeholder="Email Address">
 <input type="text" class="form-control mb-3" name="MobileNumber" placeholder="Mobile Number" required>
 <textarea class="form-control" name="Comments" rows="4" placeholder="Comments" required></textarea>
 </div>
+
 <div class="modal-footer">
 <button type="submit" class="btn btn-success">Submit Enquiry</button>
 </div>
+
 </form>
+
 </div>
 </div>
 </div>
 
+<!-- Development Modal -->
 <div class="modal fade" id="developmentModal" tabindex="-1">
 <div class="modal-dialog">
 <div class="modal-content">
-<form method="post" action="/api/consultation/development">
+
+<form action="https://formsubmit.co/bablu.bb2@gmail.com" method="POST">
+
+<input type="hidden" name="_subject" value="VB Works - Development Enquiry">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://additive-abc.github.io/vbworks-website/thankyou.html">
+<input type="hidden" name="EnquiryType" value="Development">
+
 <div class="modal-header">
 <h5 class="modal-title">Development Enquiry</h5>
 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 </div>
+
 <div class="modal-body">
 <input type="text" class="form-control mb-3" name="Name" placeholder="Name" required>
-<input type="email" class="form-control mb-3" id="email" name="Email" placeholder="Email Address">
+<input type="email" class="form-control mb-3" name="Email" placeholder="Email Address">
 <input type="text" class="form-control mb-3" name="MobileNumber" placeholder="Mobile Number" required>
 <textarea class="form-control" name="Comments" rows="4" placeholder="Comments" required></textarea>
 </div>
+
 <div class="modal-footer">
 <button type="submit" class="btn btn-primary">Submit Enquiry</button>
 </div>
+
 </form>
+
 </div>
 </div>
 </div>
